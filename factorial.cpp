@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
         std::cout << "arguments are not correct" << std::endl;
         return 0;
     }
-    int f = 1;
+    long long f = 1;
     for (int i = 1; i <= n; i++)
     {
         f = f * i;
