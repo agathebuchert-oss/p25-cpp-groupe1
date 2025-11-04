@@ -33,11 +33,25 @@ int main(int argc, char *argv[])
         return 0;
     }
     int f = 0;
+    int g = 1;
+    int h = f + g;
+    if (n == 0)
+    {
+        std::cout << "le résultat est " << f << std::endl;
+        return 0;
+    }
+    if (n == 1)
+    {
+        std::cout << "le résultat est " << g << std::endl;
+        return 0;
+    }
     for (int i = 0; i <= n; i++)
     {
-        f = f + i;
+        h = g + f;
+        f = g;
+        g = h;
     }
-    std::cout << "le résultat est " << f << std::endl;
+    std::cout << "le résultat est " << h << std::endl;
 
     return 0;
 }
